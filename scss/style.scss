@@ -1,0 +1,32 @@
+@import 'bourbon'; // http://bourbon.io/
+@import '../partials/variables'; // colors, fonts etc...
+@import '../partials/mixins'; // custom mixins
+@import '../partials/layout'; // responsive grid and media queries
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+*,
+*::after,
+*::before {
+    @include box-sizing(border-box);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: {
+        size: 1.6rem;
+        family: $primary-font;
+    }
+    color: $color-1;
+    background-color: $color-4;
+}
+
+a {
+    text-decoration: none;
+    color: $color-2;
+}
