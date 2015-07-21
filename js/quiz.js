@@ -18,11 +18,11 @@ function generateHTML(data) {
 
         var description = "<h4>" + question.description + "</h4>";
 
-        var d1 = document.getElementById('cd-form');
-        d1.insertAdjacentHTML('beforeend', description);
+        var form = document.getElementById('cd-form');
+        form.insertAdjacentHTML('beforeend', description);
 
         if (isInputQuestion(question)) {
-            d1.insertAdjacentHTML('beforeend', generateInput());
+            form.insertAdjacentHTML('beforeend', generateInput());
         }
     });
 
