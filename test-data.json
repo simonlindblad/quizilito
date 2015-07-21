@@ -1,0 +1,19 @@
+{
+    "title": "Hejsan!",
+    "questions": [
+        {
+            "description": "Hejsan hejsan",
+            "alternatives": [
+                "a",
+                "b",
+                "c"
+            ],
+            "answer": "b"
+        },
+        {
+            "description": "What comes after 'a'?",
+            "alternatives": [],
+            "answer": "b"
+        }
+    ]
+}
