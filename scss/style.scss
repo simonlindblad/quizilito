@@ -216,12 +216,13 @@ Form
 		@include animation(cd-bounce .3s);
 	}
 
-	input[type="submit"] {
+	input[type="submit"], input[type="button"] {
 		/* button style */
 		border: none;
 		background: $color-2;
 		border-radius: .25em;
 		padding: 16px 20px;
+        margin: 0 10px;
 		color: $color-4;
 		font-weight: bold;
 		float: right;
@@ -245,8 +246,11 @@ Form
 
 	[required] {
 		background: url('../img/cd-required.svg') no-repeat top right;
-        border-color: $color-5 !important;
 	}
+
+    .error {
+        border-color: $color-5 !important;
+    }
 
 	@include MQ(M) {
 		div {

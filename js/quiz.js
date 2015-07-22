@@ -32,7 +32,7 @@ function generateHTML(data) {
         form.insertAdjacentHTML('beforeend', questionHTML);
     });
 
-    form.insertAdjacentHTML('beforeend', generateSubmit());
+    form.insertAdjacentHTML('beforeend', createButtons());
 }
 
 function isInputQuestion(question) {
@@ -46,8 +46,16 @@ function generateInput() {
     return '<input class="input" name=' + uniqueName + ' id=' + uniqueName + ' type="text" required>';
 }
 
-function generateSubmit() {
-    return '<div><input type="submit" value="Submit"></div>';
+function createSubmitButton() {
+    return '<input type="submit" value="Submit">';
+}
+
+function createButtons() {
+    return '<div>' + createSubmitButton() + createShowAnswerButton() + '</div>';
+}
+
+function createShowAnswerButton() {
+    return '<input type="button" value="Show answers" onClick="showAnswers()">';
 }
 
 // Runs when user chooses to submit their answers
@@ -59,8 +67,18 @@ $("form").submit(function(event) {
 function checkAnswers() {
     nameAnswerPairs.forEach(function(pair) {
         console.log(pair);
+
+        $(pair.name).removeClass('error');
+
         if ($(pair.name).val() === pair.answer) {
             console.log("YAY!, correct!");
         }
+        else {
+            $(pair.name).addClass('error');
+        }
     });
+}
+
+function showAnswers() {
+    document.write(data);
 }

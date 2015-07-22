@@ -177,12 +177,13 @@ Form
     -webkit-animation: cd-bounce 0.3s;
     -moz-animation: cd-bounce 0.3s;
     animation: cd-bounce 0.3s; }
-  .cd-form input[type="submit"] {
+  .cd-form input[type="submit"], .cd-form input[type="button"] {
     /* button style */
     border: none;
     background: #2c97de;
     border-radius: .25em;
     padding: 16px 20px;
+    margin: 0 10px;
     color: #fff;
     font-weight: bold;
     float: right;
@@ -194,19 +195,20 @@ Form
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
-    .no-touch .cd-form input[type="submit"]:hover {
+    .no-touch .cd-form input[type="submit"]:hover, .no-touch .cd-form input[type="button"]:hover {
       background: #42a2e1; }
-    .cd-form input[type="submit"]:focus {
+    .cd-form input[type="submit"]:focus, .cd-form input[type="button"]:focus {
       outline: none;
       background: #2b3e51; }
-    .cd-form input[type="submit"]:active {
+    .cd-form input[type="submit"]:active, .cd-form input[type="button"]:active {
       -webkit-transform: scale(0.9);
       -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
       -o-transform: scale(0.9);
       transform: scale(0.9); }
   .cd-form [required] {
-    background: url("../img/cd-required.svg") no-repeat top right;
+    background: url("../img/cd-required.svg") no-repeat top right; }
+  .cd-form .error {
     border-color: #e94b35 !important; }
   @media only screen and (min-width: 600px) {
     .cd-form div {
