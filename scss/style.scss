@@ -35,7 +35,6 @@ a {
 Form
 
 -------------------------------- */
-
 .cd-form {
 	width: 90%;
 	max-width: $M; // breakpoints inside partials > _layout.scss
@@ -283,4 +282,19 @@ Form
 	50% {
 		@include transform(scale(.8));
 	}
+}
+
+/* --------------------------------
+
+Answers section
+
+-------------------------------- */
+.cd-answers-wrapper {
+    padding: 1em 0;
+    display: none;
+    background-color: $color-3;
+
+    .cd-answers {
+        @extend .cd-form;
+    }
 }

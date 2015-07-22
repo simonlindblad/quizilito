@@ -28,36 +28,38 @@ a {
 Form
 
 -------------------------------- */
-.cd-form {
+.cd-form, .cd-answers-wrapper .cd-answers {
   width: 90%;
   max-width: 600px;
   margin: 4em auto; }
-  .cd-form::after {
+  .cd-form::after, .cd-answers-wrapper .cd-answers::after {
     clear: both;
     content: "";
     display: table; }
-  .cd-form fieldset {
+  .cd-form fieldset, .cd-answers-wrapper .cd-answers fieldset {
     margin: 24px 0; }
-  .cd-form legend {
+  .cd-form legend, .cd-answers-wrapper .cd-answers legend {
     padding-bottom: 10px;
     margin-bottom: 20px;
     font-size: 2rem;
     border-bottom: 1px solid #ecf0f1; }
-  .cd-form div {
+  .cd-form div, .cd-answers-wrapper .cd-answers div {
     /* form element wrapper */
     position: relative;
     margin: 20px 0; }
-  .cd-form h4 {
+  .cd-form h4, .cd-answers-wrapper .cd-answers h4 {
     font-size: 1.3rem;
     color: #94aab0;
     margin-bottom: 10px; }
-  .cd-form input, .cd-form textarea, .cd-form select, .cd-form label {
+  .cd-form input, .cd-answers-wrapper .cd-answers input, .cd-form textarea, .cd-answers-wrapper .cd-answers textarea, .cd-form select, .cd-answers-wrapper .cd-answers select, .cd-form label, .cd-answers-wrapper .cd-answers label {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     color: #2b3e51; }
-  .cd-form input[type="text"],
+  .cd-form input[type="text"], .cd-answers-wrapper .cd-answers input[type="text"],
   .cd-form select,
-  .cd-form legend {
+  .cd-answers-wrapper .cd-answers select,
+  .cd-form legend,
+  .cd-answers-wrapper .cd-answers legend {
     display: block;
     width: 100%;
     -webkit-appearance: none;
@@ -65,23 +67,25 @@ Form
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
-  .cd-form input[type="text"],
-  .cd-form select {
+  .cd-form input[type="text"], .cd-answers-wrapper .cd-answers input[type="text"],
+  .cd-form select,
+  .cd-answers-wrapper .cd-answers select {
     /* general style for input elements */
     padding: 12px;
     border: 1px solid #cfd9db;
     background-color: #fff;
     border-radius: .25em;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08); }
-    .cd-form input[type="text"]:focus,
-    .cd-form select:focus {
+    .cd-form input[type="text"]:focus, .cd-answers-wrapper .cd-answers input[type="text"]:focus,
+    .cd-form select:focus,
+    .cd-answers-wrapper .cd-answers select:focus {
       outline: none;
       border-color: #2c97de;
       box-shadow: 0 0 5px rgba(44, 151, 222, 0.2); }
-  .cd-form .cd-select {
+  .cd-form .cd-select, .cd-answers-wrapper .cd-answers .cd-select {
     /* select element wapper */
     position: relative; }
-    .cd-form .cd-select::after {
+    .cd-form .cd-select::after, .cd-answers-wrapper .cd-answers .cd-select::after {
       /* arrow icon for select element */
       content: '';
       position: absolute;
@@ -93,18 +97,18 @@ Form
       width: 16px;
       height: 16px;
       pointer-events: none; }
-  .cd-form select {
+  .cd-form select, .cd-answers-wrapper .cd-answers select {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     cursor: pointer; }
-  .cd-form select::-ms-expand {
+  .cd-form select::-ms-expand, .cd-answers-wrapper .cd-answers select::-ms-expand {
     display: none; }
-  .cd-form .cd-form-list {
+  .cd-form .cd-form-list, .cd-answers-wrapper .cd-answers .cd-form-list {
     margin-top: 16px; }
-    .cd-form .cd-form-list::after {
+    .cd-form .cd-form-list::after, .cd-answers-wrapper .cd-answers .cd-form-list::after {
       clear: both;
       content: "";
       display: table; }
-  .cd-form .cd-form-list li {
+  .cd-form .cd-form-list li, .cd-answers-wrapper .cd-answers .cd-form-list li {
     /* wrapper for radio and checkbox input types */
     display: inline-block;
     position: relative;
@@ -114,8 +118,9 @@ Form
     user-select: none;
     margin: 0 26px 16px 0;
     float: left; }
-  .cd-form input[type=radio],
-  .cd-form input[type=checkbox] {
+  .cd-form input[type=radio], .cd-answers-wrapper .cd-answers input[type=radio],
+  .cd-form input[type=checkbox],
+  .cd-answers-wrapper .cd-answers input[type=checkbox] {
     /* hide original check and radio buttons */
     position: absolute;
     left: 0;
@@ -129,13 +134,17 @@ Form
     padding: 0;
     opacity: 0;
     z-index: 2; }
-  .cd-form input[type="radio"] + label,
-  .cd-form input[type="checkbox"] + label {
+  .cd-form input[type="radio"] + label, .cd-answers-wrapper .cd-answers input[type="radio"] + label,
+  .cd-form input[type="checkbox"] + label,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"] + label {
     padding-left: 24px; }
-  .cd-form input[type="radio"] + label::before,
+  .cd-form input[type="radio"] + label::before, .cd-answers-wrapper .cd-answers input[type="radio"] + label::before,
   .cd-form input[type="radio"] + label::after,
+  .cd-answers-wrapper .cd-answers input[type="radio"] + label::after,
   .cd-form input[type="checkbox"] + label::before,
-  .cd-form input[type="checkbox"] + label::after {
+  .cd-answers-wrapper .cd-answers input[type="checkbox"] + label::before,
+  .cd-form input[type="checkbox"] + label::after,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"] + label::after {
     /* custom radio and check boxes */
     content: '';
     display: block;
@@ -145,39 +154,48 @@ Form
     margin-top: -8px;
     width: 16px;
     height: 16px; }
-  .cd-form input[type="radio"] + label::before,
-  .cd-form input[type="checkbox"] + label::before {
+  .cd-form input[type="radio"] + label::before, .cd-answers-wrapper .cd-answers input[type="radio"] + label::before,
+  .cd-form input[type="checkbox"] + label::before,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"] + label::before {
     border: 1px solid #cfd9db;
     background: #fff;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08); }
-  .cd-form input[type="radio"] + label::before,
-  .cd-form input[type="radio"] + label::after {
-    border-radius: 50%; }
-  .cd-form input[type="checkbox"] + label::before,
-  .cd-form input[type="checkbox"] + label::after {
-    border-radius: .25em; }
+  .cd-form input[type="radio"] + label::before, .cd-answers-wrapper .cd-answers input[type="radio"] + label::before,
   .cd-form input[type="radio"] + label::after,
-  .cd-form input[type="checkbox"] + label::after {
+  .cd-answers-wrapper .cd-answers input[type="radio"] + label::after {
+    border-radius: 50%; }
+  .cd-form input[type="checkbox"] + label::before, .cd-answers-wrapper .cd-answers input[type="checkbox"] + label::before,
+  .cd-form input[type="checkbox"] + label::after,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"] + label::after {
+    border-radius: .25em; }
+  .cd-form input[type="radio"] + label::after, .cd-answers-wrapper .cd-answers input[type="radio"] + label::after,
+  .cd-form input[type="checkbox"] + label::after,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"] + label::after {
     background-color: #2c97de;
     background-position: center center;
     background-repeat: no-repeat;
     box-shadow: 0 0 5px rgba(44, 151, 222, 0.4);
     display: none; }
-  .cd-form input[type="radio"]:focus + label::before,
-  .cd-form input[type="checkbox"]:focus + label::before {
+  .cd-form input[type="radio"]:focus + label::before, .cd-answers-wrapper .cd-answers input[type="radio"]:focus + label::before,
+  .cd-form input[type="checkbox"]:focus + label::before,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"]:focus + label::before {
     /* add focus effect for radio and check buttons */
     box-shadow: 0 0 5px rgba(44, 151, 222, 0.6); }
-  .cd-form input[type="radio"]:checked + label::after,
-  .cd-form input[type="checkbox"]:checked + label::after {
+  .cd-form input[type="radio"]:checked + label::after, .cd-answers-wrapper .cd-answers input[type="radio"]:checked + label::after,
+  .cd-form input[type="checkbox"]:checked + label::after,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"]:checked + label::after {
     display: block; }
-  .cd-form input[type="radio"]:checked + label::before,
+  .cd-form input[type="radio"]:checked + label::before, .cd-answers-wrapper .cd-answers input[type="radio"]:checked + label::before,
   .cd-form input[type="radio"]:checked + label::after,
+  .cd-answers-wrapper .cd-answers input[type="radio"]:checked + label::after,
   .cd-form input[type="checkbox"]:checked + label::before,
-  .cd-form input[type="checkbox"]:checked + label::after {
+  .cd-answers-wrapper .cd-answers input[type="checkbox"]:checked + label::before,
+  .cd-form input[type="checkbox"]:checked + label::after,
+  .cd-answers-wrapper .cd-answers input[type="checkbox"]:checked + label::after {
     -webkit-animation: cd-bounce 0.3s;
     -moz-animation: cd-bounce 0.3s;
     animation: cd-bounce 0.3s; }
-  .cd-form input[type="submit"], .cd-form input[type="button"] {
+  .cd-form input[type="submit"], .cd-answers-wrapper .cd-answers input[type="submit"], .cd-form input[type="button"], .cd-answers-wrapper .cd-answers input[type="button"] {
     /* button style */
     border: none;
     background: #2c97de;
@@ -195,33 +213,34 @@ Form
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none; }
-    .no-touch .cd-form input[type="submit"]:hover, .no-touch .cd-form input[type="button"]:hover {
+    .no-touch .cd-form input[type="submit"]:hover, .no-touch .cd-answers-wrapper .cd-answers input[type="submit"]:hover, .cd-answers-wrapper .no-touch .cd-answers input[type="submit"]:hover, .no-touch .cd-form input[type="button"]:hover, .no-touch .cd-answers-wrapper .cd-answers input[type="button"]:hover, .cd-answers-wrapper .no-touch .cd-answers input[type="button"]:hover {
       background: #42a2e1; }
-    .cd-form input[type="submit"]:focus, .cd-form input[type="button"]:focus {
+    .cd-form input[type="submit"]:focus, .cd-answers-wrapper .cd-answers input[type="submit"]:focus, .cd-form input[type="button"]:focus, .cd-answers-wrapper .cd-answers input[type="button"]:focus {
       outline: none;
       background: #2b3e51; }
-    .cd-form input[type="submit"]:active, .cd-form input[type="button"]:active {
+    .cd-form input[type="submit"]:active, .cd-answers-wrapper .cd-answers input[type="submit"]:active, .cd-form input[type="button"]:active, .cd-answers-wrapper .cd-answers input[type="button"]:active {
       -webkit-transform: scale(0.9);
       -moz-transform: scale(0.9);
       -ms-transform: scale(0.9);
       -o-transform: scale(0.9);
       transform: scale(0.9); }
-  .cd-form [required] {
+  .cd-form [required], .cd-answers-wrapper .cd-answers [required] {
     background: url("../img/cd-required.svg") no-repeat top right; }
-  .cd-form .error {
+  .cd-form .error, .cd-answers-wrapper .cd-answers .error {
     border-color: #e94b35 !important; }
   @media only screen and (min-width: 600px) {
-    .cd-form div {
+    .cd-form div, .cd-answers-wrapper .cd-answers div {
       /* form element wrapper */
       margin: 32px 0; }
-    .cd-form legend + div {
+    .cd-form legend + div, .cd-answers-wrapper .cd-answers legend + div {
       /* reduce margin-top for first form element after the legend */
       margin-top: 20px; }
-    .cd-form h4 {
+    .cd-form h4, .cd-answers-wrapper .cd-answers h4 {
       font-size: 1.4rem;
       margin-bottom: 10px; }
-    .cd-form input[type="text"],
-    .cd-form select {
+    .cd-form input[type="text"], .cd-answers-wrapper .cd-answers input[type="text"],
+    .cd-form select,
+    .cd-answers-wrapper .cd-answers select {
       padding: 16px; } }
 
 @-webkit-keyframes cd-bounce {
@@ -247,3 +266,12 @@ Form
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
     transform: scale(0.8); } }
+/* --------------------------------
+
+Answers section
+
+-------------------------------- */
+.cd-answers-wrapper {
+  padding: 1em 0;
+  display: none;
+  background-color: #ecf0f1; }

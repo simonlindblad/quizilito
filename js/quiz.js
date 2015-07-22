@@ -15,21 +15,31 @@ function generateHTML(data) {
 
     document.title = data.title;
 
+    $("legend").text(data.title);
+
     var form = document.getElementById('cd-form');
+
+    var answersSection = document.getElementById("answers");
 
     data.questions.forEach(function(question) {
 
         var questionHTML = "<fieldset>";
+        var answerHTML = "<div>";
 
         var description = "<h4>" + question.description + "</h4>";
         questionHTML += description;
+        answerHTML += description;
 
         if (isInputQuestion(question)) {
             questionHTML += generateInput();
         }
 
+        answerHTML += addAnswer(question);
+
         questionHTML += "</fieldset>";
+        answerHTML += "</div>";
         form.insertAdjacentHTML('beforeend', questionHTML);
+        answersSection.insertAdjacentHTML('beforeend', answerHTML);
     });
 
     form.insertAdjacentHTML('beforeend', createButtons());
@@ -55,7 +65,7 @@ function createButtons() {
 }
 
 function createShowAnswerButton() {
-    return '<input type="button" value="Show answers" onClick="showAnswers()">';
+    return '<input type="button" value="Show answers" onClick="toggleAnswers()">';
 }
 
 // Runs when user chooses to submit their answers
@@ -79,6 +89,10 @@ function checkAnswers() {
     });
 }
 
-function showAnswers() {
-    document.write(data);
+function addAnswer(question) {
+    return "<p>" + question.answer + "</p>";
+}
+
+function toggleAnswers() {
+    $(".cd-answers-wrapper").slideToggle();
 }
