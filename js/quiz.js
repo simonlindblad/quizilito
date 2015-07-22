@@ -75,18 +75,20 @@ $("form").submit(function(event) {
 });
 
 function checkAnswers() {
+
+    var foundFaults = false;
+
     nameAnswerPairs.forEach(function(pair) {
-        console.log(pair);
-
-        $(pair.name).removeClass('error');
-
-        if ($(pair.name).val() === pair.answer) {
-            console.log("YAY!, correct!");
-        }
-        else {
+        if ($(pair.name).val() !== pair.answer) {
+            foundFaults = true;
             $(pair.name).addClass('error');
         }
+        else {
+            $(pair.name).removeClass('error');
+        }
     });
+
+    (foundFaults) ? $(".correct-message").hide() : $(".correct-message").show();
 }
 
 function addAnswer(question) {

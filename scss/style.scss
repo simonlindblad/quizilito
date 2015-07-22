@@ -298,3 +298,26 @@ Answers section
         @extend .cd-form;
     }
 }
+
+/* --------------------------------
+
+Correct answer message
+
+-------------------------------- */
+.correct-message {
+    display: none;
+
+    p {
+    width: 90%;
+    max-width: $M; // breakpoints inside partials > _layout.scss
+    margin: 4em auto;
+
+	background: $color-6;
+	color: $color-4;
+	font-size: 1.4rem;
+	text-align: center;
+	@include font-smoothing;
+	border-radius: .25em;
+	padding: 16px;
+    }
+}

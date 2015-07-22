@@ -275,3 +275,23 @@ Answers section
   padding: 1em 0;
   display: none;
   background-color: #ecf0f1; }
+
+/* --------------------------------
+
+Correct answer message
+
+-------------------------------- */
+.correct-message {
+  display: none; }
+  .correct-message p {
+    width: 90%;
+    max-width: 600px;
+    margin: 4em auto;
+    background: #67BE78;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: .25em;
+    padding: 16px; }
