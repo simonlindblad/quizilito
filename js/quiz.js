@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var data;
 var counter = 0;
@@ -15,23 +15,28 @@ function generateHTML(data) {
 
     document.title = data.title;
 
+    var form = document.getElementById('cd-form');
+
     data.questions.forEach(function(question) {
 
-        var description = "<h4>" + question.description + "</h4>";
+        var questionHTML = "<fieldset>";
 
-        var form = document.getElementById('cd-form');
-        form.insertAdjacentHTML('beforeend', description);
+        var description = "<h4>" + question.description + "</h4>";
+        questionHTML += description;
 
         if (isInputQuestion(question)) {
-            form.insertAdjacentHTML('beforeend', generateInput());
+            questionHTML += generateInput();
         }
+
+        questionHTML += "</fieldset>";
+        form.insertAdjacentHTML('beforeend', questionHTML);
     });
 
-    generateSubmit();
+    form.insertAdjacentHTML('beforeend', generateSubmit());
 }
 
 function isInputQuestion(question) {
-    return question.alternatives.length == 0;
+    return question.alternatives.length === 0;
 }
 
 function generateInput() {
@@ -42,19 +47,16 @@ function generateInput() {
 }
 
 function generateSubmit() {
-    var form = document.getElementById('cd-form');
-    form.insertAdjacentHTML('beforeend',
-        '<div><input type="submit" value="Submit"></div>');
+    return '<div><input type="submit" value="Submit"></div>';
 }
 
 // Runs when user chooses to submit their answers
 $("form").submit(function(event) {
-    var serializedData = $(this).serializeArray();
-    checkAnswers(serializedData);
+    checkAnswers();
     event.preventDefault();
 });
 
-function checkAnswers(answers) {
+function checkAnswers() {
     nameAnswerPairs.forEach(function(pair) {
         console.log(pair);
         if ($(pair.name).val() === pair.answer) {
