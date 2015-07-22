@@ -30,6 +30,10 @@ function generateHTML(data) {
     generateSubmit();
 }
 
+function isInputQuestion(question) {
+    return question.alternatives.length == 0;
+}
+
 function generateInput() {
     var uniqueName = "cd-input-" + counter;
     nameAnswerPairs.push({"name": '#' + uniqueName, "answer": data.questions[counter].answer});
@@ -43,15 +47,11 @@ function generateSubmit() {
         '<div><input type="submit" value="Submit"></div>');
 }
 
-function isInputQuestion(question) {
-    return question.alternatives.length == 0;
-}
-
+// Runs when user chooses to submit their answers
 $("form").submit(function(event) {
     var serializedData = $(this).serializeArray();
     checkAnswers(serializedData);
     event.preventDefault();
-
 });
 
 function checkAnswers(answers) {
