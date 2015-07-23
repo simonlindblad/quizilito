@@ -10,6 +10,11 @@
             "description": "What comes after 'b'?",
             "alternatives": [],
             "answer": "c"
+        },
+        {
+            "description": "What comes after 'c'?",
+            "alternatives": ["d", "e", "f"],
+            "answer": "d"
         }
     ]
 }

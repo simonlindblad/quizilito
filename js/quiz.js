@@ -18,7 +18,6 @@ function generateHTML(data) {
     $("legend").text(data.title);
 
     var form = document.getElementById('cd-form');
-
     var answersSection = document.getElementById("answers");
 
     data.questions.forEach(function(question) {
@@ -32,6 +31,9 @@ function generateHTML(data) {
 
         if (isInputQuestion(question)) {
             questionHTML += generateInput();
+        }
+        else {
+            questionHTML += generateRatio(question.alternatives);
         }
 
         answerHTML += addAnswer(question);
@@ -54,6 +56,21 @@ function generateInput() {
     nameAnswerPairs.push({"name": '#' + uniqueName, "answer": data.questions[counter].answer});
     counter++;
     return '<input class="input" name=' + uniqueName + ' id=' + uniqueName + ' type="text" required>';
+}
+
+function generateRatio(alternatives) {
+    var uniqueName = "cd-ratio-" + counter;
+    nameAnswerPairs.push({"name": "input[name=" + uniqueName + "]:checked", "answer": data.questions[counter].answer});
+    counter++;
+
+    var html = '<ul class="cd-form-list">';
+    alternatives.forEach(function(alternative) {
+        html += '<li><input name=' + uniqueName + ' type="radio" value=' + alternative + '>';
+        html += "<label>" + alternative + "</label></li>";
+    });
+
+    html += '</ul>';
+    return html;
 }
 
 function createSubmitButton() {
