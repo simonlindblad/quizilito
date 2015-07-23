@@ -1,17 +1,13 @@
 'use strict';
 
-var data;
 var counter = 0;
 var nameAnswerPairs = [];
 
 jQuery(document).ready(function($) {
-    $.getJSON("test-data.json", function(json) {
-        data = json;
-        generateHTML(json);
-    });
+    generateHTML();
 });
 
-function generateHTML(data) {
+function generateHTML() {
 
     document.title = data.title;
 
@@ -55,7 +51,7 @@ function generateInput() {
     var uniqueName = "cd-input-" + counter;
     nameAnswerPairs.push({"name": '#' + uniqueName, "answer": data.questions[counter].answer});
     counter++;
-    return '<input class="input" name=' + uniqueName + ' id=' + uniqueName + ' type="text" required>';
+    return '<input class="input" name=' + uniqueName + ' id=' + uniqueName + ' type="text">';
 }
 
 function generateRatio(alternatives) {
