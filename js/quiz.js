@@ -1,8 +1,9 @@
 'use strict';
 
 var counter = 0;
-var nameAnswerPairs = [];
+var nameAnswerPairs = []; // Storing respective field and answer
 
+// Generate when document is ready
 jQuery(document).ready(function($) {
     generateHTML();
 });
@@ -10,21 +11,21 @@ jQuery(document).ready(function($) {
 function generateHTML() {
 
     document.title = data.title;
-
     $("legend").text(data.title);
 
     var form = document.getElementById('cd-form');
     var answersSection = document.getElementById("answers");
 
+    var form = $('#cd-form');
+    var answersSection = $('#answers');
+
     data.questions.forEach(function(question) {
 
-        var questionHTML = "<fieldset>";
-        var answerHTML = "<div>";
+        var description = wrap(question.description, "<h4></h4>");
+        var questionHTML = description;
+        var answerHTML = description;
 
-        var description = "<h4>" + question.description + "</h4>";
-        questionHTML += description;
-        answerHTML += description;
-
+        answerHTML += addAnswer(question);
         if (isInputQuestion(question)) {
             questionHTML += generateInput();
         }
@@ -32,15 +33,19 @@ function generateHTML() {
             questionHTML += generateRatio(question.alternatives);
         }
 
-        answerHTML += addAnswer(question);
+        questionHTML = wrap(questionHTML, "<fieldset></fieldset>");
+        answerHTML = wrap(answerHTML, "<div></div>");
 
-        questionHTML += "</fieldset>";
-        answerHTML += "</div>";
-        form.insertAdjacentHTML('beforeend', questionHTML);
-        answersSection.insertAdjacentHTML('beforeend', answerHTML);
+        form.append(questionHTML);
+        answersSection.append(answerHTML);
     });
+    form.append(createButtons());
+}
 
-    form.insertAdjacentHTML('beforeend', createButtons());
+// Wraps a given string in another string rep. of a tag
+function wrap(string, tag) {
+    var divider = tag.indexOf(">") + 1; // Up and including >
+    return tag.slice(0, divider) + string + tag.slice(divider);
 }
 
 function isInputQuestion(question) {
@@ -59,26 +64,21 @@ function generateRatio(alternatives) {
     nameAnswerPairs.push({"name": "input[name=" + uniqueName + "]:checked", "answer": data.questions[counter].answer});
     counter++;
 
-    var html = '<ul class="cd-form-list">';
+    var html = "";
     alternatives.forEach(function(alternative) {
         html += '<li><input name=' + uniqueName + ' type="radio" value=' + alternative + '>';
         html += "<label>" + alternative + "</label></li>";
     });
 
-    html += '</ul>';
+    html = wrap(html, '<ul class="cd-form-list"></ul>');
     return html;
 }
 
-function createSubmitButton() {
-    return '<input type="submit" value="Submit">';
-}
-
 function createButtons() {
-    return '<div>' + createSubmitButton() + createShowAnswerButton() + '</div>';
-}
+    var submitButton = '<input type="submit" value="Submit">';
+    var showAnswersButton = '<input type="button" value="Show answers" onClick="toggleAnswers()">';
 
-function createShowAnswerButton() {
-    return '<input type="button" value="Show answers" onClick="toggleAnswers()">';
+    return '<div>' + submitButton + showAnswersButton + '</div>';
 }
 
 // Runs when user chooses to submit their answers
