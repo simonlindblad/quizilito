@@ -78,13 +78,13 @@ function generateRatio(alternatives) {
     nameAnswerPairs.push({"name": "input[name=" + uniqueName + "]:checked", "answer": data.questions[counter].answer});
     counter++;
 
-    var html = "";
+    var html = '<ul class="cd-form-list">';
     alternatives.forEach(function(alternative) {
-        html += '<li><input name=' + uniqueName + ' type="radio" value=' + alternative + '>';
+        html += '<li><input name=' + uniqueName + ' type="radio" value=' + escape(alternative) + '>';
         html += "<label>" + alternative + "</label></li>";
     });
 
-    html = wrap(html, '<ul class="cd-form-list"></ul>');
+    html += '</ul>';
     return html;
 }
 
