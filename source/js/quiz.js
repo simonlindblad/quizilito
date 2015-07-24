@@ -115,7 +115,12 @@ function checkAnswers() {
         }
     });
 
-    (foundFaults) ? $(".correct-message").hide() : $(".correct-message").show();
+    if (foundFaults) {
+        $(".correct-message").hide();
+    }
+    else {
+        $(".correct-message").show();    
+    }
 }
 
 function addAnswer(question) {
