@@ -119,7 +119,8 @@ function checkAnswers() {
         $(".correct-message").hide();
     }
     else {
-        $(".correct-message").show();    
+        $(".correct-message").show();
+        $('html, body').animate({scrollTop: $(document).height()}, 'slow');   
     }
 }
 
