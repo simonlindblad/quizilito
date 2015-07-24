@@ -295,3 +295,15 @@ Correct answer message
     -moz-osx-font-smoothing: grayscale;
     border-radius: .25em;
     padding: 16px; }
+
+/* --------------------------------
+
+Gists
+
+-------------------------------- */
+.gist-data {
+  margin: 0 !important;
+  border: none; }
+
+.gist-meta {
+  display: none; }
