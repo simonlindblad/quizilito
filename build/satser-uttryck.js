@@ -1,12 +1,9 @@
 var data = {
     "title": "Satser och uttryck",
     "questions": [
-        {
-            "description": "För vilket värde på n kommer 'Fall 2' skrivas ut?",
-            "alternatives": ["n", "n", "2"],
-            "answer": "2 > n >= 0"
-        }, {
-            "description": "För vilket värde på n kommer 'Fall 2' skrivas ut?",
+		{
+            "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
+			"gist-id": "529548cb1623192fbdf4",
             "alternatives": ["n > 0", "n >= 0", "2 > n >= 0"],
             "answer": "2 > n >= 0"
         }
