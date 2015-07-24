@@ -68,14 +68,14 @@ function isInputQuestion(question) {
 
 function generateInput() {
     var uniqueName = "cd-input-" + counter;
-    nameAnswerPairs.push({"name": '#' + uniqueName, "answer": data.questions[counter].answer});
+    nameAnswerPairs.push({"name": '#' + uniqueName, "answer": escape(data.questions[counter].answer)});
     counter++;
     return '<input class="input" name=' + uniqueName + ' id=' + uniqueName + ' type="text">';
 }
 
 function generateRatio(alternatives) {
     var uniqueName = "cd-ratio-" + counter;
-    nameAnswerPairs.push({"name": "input[name=" + uniqueName + "]:checked", "answer": data.questions[counter].answer});
+    nameAnswerPairs.push({"name": "input[name=" + uniqueName + "]:checked", "answer": escape(data.questions[counter].answer)});
     counter++;
 
     var html = '<ul class="cd-form-list">';
