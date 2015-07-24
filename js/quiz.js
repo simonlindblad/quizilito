@@ -6,6 +6,9 @@ var nameAnswerPairs = []; // Storing respective field and answer
 // Generate when document is ready
 jQuery(document).ready(function($) {
     generateHTML();
+
+    $.getScript("https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.1/gist-embed.min.js", function(){
+    });
 });
 
 function generateHTML() {
@@ -21,8 +24,15 @@ function generateHTML() {
 
     data.questions.forEach(function(question) {
 
+        var questionHTML = "";
+
+
+        if ("gist_id" in question) {
+            questionHTML += generateGist(question.gist_id);
+        }
+
         var description = wrap(question.description, "<h4></h4>");
-        var questionHTML = description;
+        questionHTML += description;
         var answerHTML = description;
 
         answerHTML += addAnswer(question);
@@ -46,6 +56,10 @@ function generateHTML() {
 function wrap(string, tag) {
     var divider = tag.indexOf(">") + 1; // Up and including >
     return tag.slice(0, divider) + string + tag.slice(divider);
+}
+
+function generateGist(gistId) {
+    return '<code data-gist-id=' + gistId + '></code>';
 }
 
 function isInputQuestion(question) {
