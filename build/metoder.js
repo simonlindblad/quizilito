@@ -9,10 +9,10 @@ var data = {
         }, {
             "description": "Vilket uttryck returnerar en exakt kopia av x?",
             "alternatives": ["x.strip().title()", "x.lstrip().replace('aldrig', 'ofta')", "x.split('!')[0] + '!'"],
-            "answer": "x.split('x')[0] + '!'"
+            "answer": "x.split('!')[0] + '!'"
         }, {
             "description": "Vilket av följande uttryck returnerar ett värde?",
-            "gist_id": "90bad65e763b70b7c115"
+            "gist_id": "90bad65e763b70b7c115",
             "alternatives": ["x.remove(5)", "x.pop(5)", "x.append(5)"],
             "answer": "x.pop(5)"
         }, {

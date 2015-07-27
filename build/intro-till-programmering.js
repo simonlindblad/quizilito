@@ -3,7 +3,7 @@ var data = {
     "questions": [
 		{
             "description": "Vilka värden kommer range(0,6,2) att ge?",
-            "alternatives": ["0, 2, 4", "6, 5, 4, 3", "1, 3, 5"],
+            "alternatives": ["0, 2, 4", "0, 2, 4, 6", "1, 3, 5"],
             "answer": "0, 2, 4"
         }, {
             "description": "Vilken sorts tal är 3/5",
