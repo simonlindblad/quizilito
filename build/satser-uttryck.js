@@ -17,7 +17,7 @@ var data = {
             "alternatives": ["n > 2", "2 > n >= 0", "n >= 0"],
             "answer": "n > 2"
         }, {
-        	"description": "För vilket intervall på n kommer 'Fall 3' skrivas ut? (så stort som möjligt)",
+        	"description": "För vilka värden på n kommer 'Fall 3' skrivas ut?",
 			"alternatives": ["n < 2", "n < 0", "n > 2"],
 			"answer": "n < 2"
         }
