@@ -16,7 +16,7 @@ var data = {
             "answer": "y[:2] + y[8:]"
         }, {
             "description": "Vilket uttryck returnerar listan [0, 2, 4, 6, 8]?",
-            "alternatives": ["y[:-2:2]", "y[0:8:2]", "y[::2]"],
+            "alternatives": ["y[::2]", "y[0:8:2]", "y[1::2]"],
             "answer": "y[::2]"
         }
     ]
