@@ -34,10 +34,6 @@ var data = {
             "alternatives": ["True", "False"],
             "answer": "True"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket [] == False?",
-            "alternatives": ["True", "False"],
-            "answer": "False"
-        }, {
             "description": "Vilket sanningsvärde har uttrycket range(0,6,2) == range(0,5,2)?",
             "alternatives": ["True", "False"],
             "answer": "True"
