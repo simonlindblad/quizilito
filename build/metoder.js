@@ -1,5 +1,5 @@
 var data = {
-    "title": "Hejsan!",
+    "title": "Metoder",
     "questions": [
         {
             "description": "Vilket uttryck returnerar heltalet 2?",
