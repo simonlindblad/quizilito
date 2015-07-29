@@ -7,12 +7,8 @@ var data = {
             "answer": "Referens"
         }, {
             "description": "Kan en funktion A komma åt en lokal variabel i en annan funktion B som ej skickats som parameter?",
-            "alternatives": ["Ja", "Nej", "Endast om A är en inre funktion till B"],
+            "alternatives": ["Ja, alltid", "Nej", "Endast om A är en inre funktion till B"],
             "answer": "Endast om A är en inre funktion till B"
-        }, {
-            "description": "En destruktiv funktion är en funktion som",
-            "alternatives": ["har sido-effekter", "skär sig i handlederna", "ändrar värdet på en lista"],
-            "answer": "har sido-effekter"
         }, {
             "description": "En lista kan innehålla sig själv",
             "alternatives": ["Sant", "Falskt"],
