@@ -2,6 +2,10 @@ var data = {
     "title": "Metoder",
     "questions": [
         {
+            "description": "Datatypen list är ett exempel på inbyggda objekt i Python",
+            "alternatives": ["Sant", "Falskt"],
+            "answer": "Sant"
+        }, {
             "description": "Vilket uttryck returnerar heltalet 2?",
             "gist_id": "17828f77063ab3946c22",
             "alternatives": ["x.count('ä')", "x.find('det där')", "x.strip()"],

@@ -12,6 +12,20 @@ var data = {
             "alternatives": ["1", "2", "3"],
             "answer": "2"
         }, {
+            "description": "Vilket sanningsvärde har uttrycket?",
+            "gist_id": "c04831f0026b5fb227cb",
+            "alternatives": ["True", "False"],
+            "answer": "True"
+        }, {
+            "description": "Vilket sanningsvärde har uttrycket?",
+            "gist_id": "d8586484fd6b9820531c",
+            "alternatives": ["True", "False"],
+            "answer": "False"
+        }, {
+            "description": "Flera nycklar i en dictionary kan ha samma värde",
+            "alternatives": ["Ja", "Nej"],
+            "answer": "Ja"
+        }, {
             "description": "Vilket av följande värden kan INTE användas som nyckel i en dictionary?",
             "alternatives": ["14", "'Pappa'", "(['Pappa'])", "('Pappa')"],
             "answer": "(['Pappa'])"
@@ -24,7 +38,7 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
-            "description": "I ett binärt sökträd saknar noden med lägst värde vänsterbarn.",
+            "description": "I ett binärt sökträd har noden med lägst värde ingen vänstergren.",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Sant"
         }, {
@@ -32,7 +46,7 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
-            "description": "I ett binärt sökträd har alla noder två barn.",
+            "description": "I alla binärt sökträd har varje nod två barn.",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }
