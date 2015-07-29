@@ -13,7 +13,7 @@ var data = {
             "answer": "2"
         }, {
             "description": "Vilket av följande värden kan INTE användas som nyckel i en dictionary?",
-            "alternatives": ["14", "'Pappa'", "(['Pappa'])", "('Pappa')"],
+            "alternatives": ["14", "'Pappa'", "['Pappa']", "('Pappa',)"],
             "answer": "(['Pappa'])"
         }, {
             "description": "Listor kan användas som värde i en dictionary.",
