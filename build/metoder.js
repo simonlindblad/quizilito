@@ -6,7 +6,7 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Sant"
         }, {
-            "description": "Vilket uttryck returnerar heltalet 2?",
+            "description": "Vilket av följande alternativ returnerar heltalet 2?",
             "gist_id": "17828f77063ab3946c22",
             "alternatives": ["x.count('ä')", "x.find('det där')", "x.strip()"],
             "answer": "x.count('ä')"
@@ -16,13 +16,13 @@ var data = {
             "answer": "x.split('!')[0] + '!'"
         }, {
             "description": "Vilket av följande uttryck returnerar ett värde?",
-            "gist_id": "90bad65e763b70b7c115",
-            "alternatives": ["x.remove(5)", "x.pop(5)", "x.append(5)"],
-            "answer": "x.pop(5)"
+            "gist_id": "417010f657e678e8a7f0",
+            "alternatives": ["seq.remove(5)", "seq.pop(5)", "seq.append(5)"],
+            "answer": "seq.pop(5)"
         }, {
-            "description": "Vilken av följande uttryck förändrar inte x?",
-            "alternatives": ["x.reverse()", "x.sort()", "x.pop()"],
-            "answer": "x.sort()"
+            "description": "Vilken av följande uttryck förändrar inte seq?",
+            "alternatives": ["seq.reverse()", "seq.sort()", "seq.pop()"],
+            "answer": "seq.sort()"
         }
     ]
 }
