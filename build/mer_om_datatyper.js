@@ -22,13 +22,13 @@ var data = {
             "alternatives": ["True", "False"],
             "answer": "False"
         }, {
-            "description": "Flera nycklar i en dictionary kan ha samma värde",
-            "alternatives": ["Ja", "Nej"],
-            "answer": "Ja"
+            "description": "Ett värde kan förekomma flera gånger i en dictionary?",
+            "alternatives": ["Sant", "Falskt"],
+            "answer": "Sant"
         }, {
             "description": "Vilket av följande värden kan INTE användas som nyckel i en dictionary?",
             "alternatives": ["14", "'Pappa'", "['Pappa']", "('Pappa',)"],
-            "answer": "(['Pappa'])"
+            "answer": "['Pappa']"
         }, {
             "description": "Listor kan användas som värde i en dictionary.",
             "alternatives": ["Sant", "Falskt"],
