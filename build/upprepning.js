@@ -2,21 +2,25 @@ var data = {
     "title": "Upprepning",
     "questions": [
         {
-            "description": "Iterativ eller rekursiv? Läs bok: om boken är slut; sluta läsa. Annars; läs sidan, bläddra, Läs bok.",
-            "alternatives": ["Iterativ", "Rekursiv"],
-            "answer": "Rekursiv"
+            "description": "Vilket värde har uttrycket?",
+            "gist_id": "8e6c33883b319d3d1123",
+            "alternatives": ["[]", "[0]", "[0, 1]", "[1]"],
+            "answer": "[0]"
         }, {
-            "description": "Iterativ eller rekursiv? Räkna kort i en kortlek: börja på noll, bläddra sedan igenom varje kort i kortleken. För varje kort ökar du siffran med ett.",
-            "alternatives": ["Iterativ", "Rekursiv"],
-            "answer": "Iterativ"
+            "description": "Vilket värde har uttrycket?",
+            "gist_id": "7ac04a2d7e9bc31ab598",
+            "alternatives": ["[]", "[0, 2, 4]", "[0, 2, 4, 6]", "[1, 3, 5]"],
+            "answer": "[0, 2, 4]"
         }, {
-            "description": "Iterativ eller rekursiv? Tvätta fönster: för varje fönster i huset, tvätta fönstret.",
-            "alternatives": ["Iterativ", "Rekursiv"],
-            "answer": "Iterativ"
+            "description": "Vilket sanningsvärde har uttrycket?",
+            "gist_id": "a320e17444b130b782f3",
+            "alternatives": ["True", "False"],
+            "answer": "True"
         }, {
-            "description": "Iterativ eller rekursiv? Ät: om du är mätt eller om maten är slut; sluta äta. Annars; ta en skopa mat, Ät.",
-            "alternatives": ["Iterativ", "Rekursiv"],
-            "answer": "Rekursiv"
+            "description": "Vilket värde har uttrycket?",
+            "gist_id": "bc4c341be237ee02a6f3",
+            "alternatives": ["[]", "[2, 4]", "[2, 3, 4]", "[4, 3]"],
+            "answer": "[4, 3]"
         }
     ]
 }
