@@ -6,11 +6,7 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
-            "description": "Något annat än indata, utdata och bieffekter behöver ej beskrivas i funktionens kontrakt",
-            "alternatives": ["Sant", "Falskt"],
-            "answer": "Sant"
-        }, {
-            "description": "En 'single line'-kommentar ska beskriva vad koden gör, inte varför",
+            "description": "En enradskommentar ska beskriva vad koden gör, inte varför",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
