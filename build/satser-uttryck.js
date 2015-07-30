@@ -8,8 +8,8 @@ var data = {
             "answer": "2 > n >= 0"
         }, {
             "description": "Hur många satser har koden ovan?",
-            "alternatives": ["2", "3", "4"],
-            "answer": "2"
+            "alternatives": ["3", "5", "6"],
+            "answer": "5"
         }, {
             "description": "Hur många literaler har koden ovan?",
             "alternatives": ["2", "5", "8"],
@@ -21,12 +21,12 @@ var data = {
             "answer": "n >= 0"
         }, {
             "description": "Hur många satser har koden ovan?",
-            "alternatives": ["2", "3", "4"],
-            "answer": "3"
+            "alternatives": ["3", "4", "6"],
+            "answer": "6"
         }, {
-            "description": "Hur många identifierare har koden ovan?",
-            "alternatives": ["3", "5", "7"],
-            "answer": "7"
+            "description": "I koden ovan är n en",
+            "alternatives": ["literal", "identifierare", "sats"],
+            "answer": "identifierare"
         }, {
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
 			"gist_id": "9a953c0475b68c47a1f4",
@@ -38,11 +38,7 @@ var data = {
 			"answer": "n < 2"
         }, {
             "description": "Hur många satser har koden ovan?",
-            "alternatives": ["2", "3", "4"],
-            "answer": "3"
-        }, {
-            "description": "Hur många sammansatta uttryck har koden ovan?",
-            "alternatives": ["2", "4", "6"],
+            "alternatives": ["6", "7", "8"],
             "answer": "6"
         }
     ]
