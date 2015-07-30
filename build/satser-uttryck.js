@@ -3,7 +3,7 @@ var data = {
     "questions": [
 		{
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
-			"gist_id": "529548cb1623192fbdf4",
+			"gist_id": "35d42dea60c355d56f4b",
             "alternatives": ["n >= 0", "n > 2", "2 > n >= 0"],
             "answer": "2 > n >= 0"
         }, {
@@ -16,7 +16,7 @@ var data = {
             "answer": "5"
         }, {
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
-			"gist_id": "f3711d88a35741761198",
+			"gist_id": "0e024d4d3cb2d1adbeec",
             "alternatives": ["n > 2", "n >= 0", "2 > n >= 0"],
             "answer": "n >= 0"
         }, {
@@ -29,7 +29,7 @@ var data = {
             "answer": "identifierare"
         }, {
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
-			"gist_id": "9a953c0475b68c47a1f4",
+			"gist_id": "fa97d0e48e2320a1154c",
             "alternatives": ["n > 2", "2 > n >= 0", "n >= 0"],
             "answer": "n > 2"
         }, {
