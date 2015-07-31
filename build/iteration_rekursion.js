@@ -2,7 +2,7 @@ var data = {
     "title": "Iteration och rekursion",
     "questions": [
         {
-            "description": "En funktion som utför ett arbete för varje element i en sekvens är",
+            "description": "En funktion som stegar över element i en sekvens är",
             "alternatives": ["Iterativ", "Rekursiv"],
             "answer": "Iterativ"
         }, {
@@ -17,6 +17,10 @@ var data = {
             "description": "En funktion som innehåller en while- eller for-loop är",
             "alternatives": ["Iterativ", "Rekursiv"],
             "answer": "Iterativ"
+        }, {
+            "description": "En funktion kan vara både iterativ och rekursiv",
+            "alternatives": ["Sant", "Falskt"],
+            "answer": "Sant"
         }
     ]
 }
