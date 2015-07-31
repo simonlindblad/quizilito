@@ -1,0 +1,34 @@
+<!--#include virtual="../../include/defaults.sv.shtml" -->
+<!--#set var="navbarName" value=" Quiz" -->
+<!--#include virtual="$PAGE_HEADER" -->
+<h1>
+<a id="user-content-quiz" class="anchor" href="#quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>Quiz</h1>
+
+<ol>
+<li><a href="build/komma-igang.html">Komma igång med Python</a></li>
+<li><a href="build/satser-uttryck.html">Satser och uttryck</a></li>
+<li><a href="build/intro-till-programmering.html">Introduktion till programmering</a></li>
+<li><a href="build/upprepning.html">Upprepning</a></li>
+<li><a href="build/hur-man-programmerar.html">Hur man programmerar</a></li>
+<li><a href="build/datatyper.html">Datatyper</a></li>
+<li><a href="build/strangar.html">Strängar</a></li>
+<li><a href="build/iteration-rekursion.html">Iteration och rekursion</a></li>
+<li><a href="build/selektion.html">Selektion</a></li>
+<li><a href="build/metoder.html">Metoder</a></li>
+<li><a href="build/grafik.html">Grafik</a></li>
+<li><a href="build/game-of-life.html">Game of Life</a></li>
+<li><a href="build/mer-om-datatyper.html">Mer om datatyper</a></li>
+<li><a href="build/funktioner.html">Funktioner</a></li>
+<li><a href="build/dubbelrekursion.html">Dubbelrekursion</a></li>
+<li><a href="build/programmeringspraxis.html">Programmeringspraxis</a></li>
+<li><a href="build/undantag.html">Undantag</a></li>
+<li><a href="build/testning.html">Testning</a></li>
+<li><a href="build/funktionell-programmering-paradigm.html">Funktionell programmering som paradigm</a></li>
+<li><a href="build/funktionell-programmering.html">Funktionell programmering</a></li>
+<li><a href="build/problemlosning.html">Problemlösning</a></li>
+<li><a href="build/utvecklingsmiljo.html">Utvecklingsmiljön Eclipse</a></li>
+<li><a href="build/interpretator-kompilator.html">Grunderna till interpretator och kompilator</a></li>
+<li><a href="build/dataabstraktion.html">Dataabstraktion</a></li>
+<li><a href="build/algoritmer.html">Algoritmer</a></li>
+</ol>
+<!--#include virtual="$PAGE_FOOTER" -->
