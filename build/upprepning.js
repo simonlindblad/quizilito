@@ -2,6 +2,14 @@ var data = {
     "title": "Upprepning",
     "questions": [
         {
+            "description": "En funktion som stegar över element i en sekvens är",
+            "alternatives": ["Iterativ", "Rekursiv"],
+            "answer": "Iterativ"
+        }, {
+            "description": "En funktion som kallar på sig själv är",
+            "alternatives": ["Iterativ", "Rekursiv"],
+            "answer": "Rekursiv"
+        }, {
             "description": "Vilket värde har uttrycket?",
             "gist_id": "8e6c33883b319d3d1123",
             "alternatives": ["[]", "[0]", "[0, 1]", "[1]"],

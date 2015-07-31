@@ -6,11 +6,11 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
-            "description": "En enradskommentar ska beskriva vad koden gör, inte varför",
+            "description": "Kommentarer används för att förklara syntaxen i sater",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
-            "description": "En docstring ska sammanfatta vad funktionen gör, inte varför funktionen gör det",
+            "description": "En docstring ska sammanfatta vad funktionen gör, inte varför funktionen gör det eller vad den används till",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Sant"
         }, {
