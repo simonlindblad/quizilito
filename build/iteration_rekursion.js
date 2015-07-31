@@ -2,21 +2,21 @@ var data = {
     "title": "Iteration och rekursion",
     "questions": [
         {
-            "description": "Iterativ eller rekursiv? Läs bok: om boken är slut; sluta läsa. Annars; läs sidan, bläddra, Läs bok.",
-            "alternatives": ["Iterativ", "Rekursiv"],
-            "answer": "Rekursiv"
-        }, {
-            "description": "Iterativ eller rekursiv? Räkna kort i en kortlek: börja på noll, bläddra sedan igenom varje kort i kortleken. För varje kort ökar du siffran med ett.",
+            "description": "En funktion som utför ett arbete för varje element i en sekvens är",
             "alternatives": ["Iterativ", "Rekursiv"],
             "answer": "Iterativ"
         }, {
-            "description": "Iterativ eller rekursiv? Tvätta fönster: för varje fönster i huset, tvätta fönstret.",
-            "alternatives": ["Iterativ", "Rekursiv"],
-            "answer": "Iterativ"
-        }, {
-            "description": "Iterativ eller rekursiv? Ät: om du är mätt eller om maten är slut; sluta äta. Annars; ta en skopa mat, Ät.",
+            "description": "En funktion som kallar på sig själv är",
             "alternatives": ["Iterativ", "Rekursiv"],
             "answer": "Rekursiv"
+        }, {
+            "description": "En funktion som alltid går mot ett basfall är",
+            "alternatives": ["Iterativ", "Rekursiv"],
+            "answer": "Rekursiv"
+        }, {
+            "description": "En funktion som innehåller en while- eller for-loop är",
+            "alternatives": ["Iterativ", "Rekursiv"],
+            "answer": "Iterativ"
         }
     ]
 }
