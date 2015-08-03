@@ -29,6 +29,10 @@ var data = {
             "gist_id": "bc4c341be237ee02a6f3",
             "alternatives": ["[]", "[2, 4]", "[2, 3, 4]", "[4, 3]"],
             "answer": "[4, 3]"
+        }, {
+            "description": "Ett rekursivt anrop måste vara i en retursats",
+            "alternatives": ["Sant", "Falskt"],
+            "answer": "Falskt"
         }
     ]
 }
