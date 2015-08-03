@@ -2,7 +2,8 @@ var data = {
     "title": "Selektion",
     "questions": [
         {
-            "description": "Vilket sanningsvärde har uttrycket 17?",
+            "description": "Vilket sanningsvärde kommer uttrycket tolkas som?",
+            "gist_id": "01fd2317976ab701fb9b"
             "alternatives": ["True", "False"],
             "answer": "True"
         }, {
@@ -11,12 +12,12 @@ var data = {
             "alternatives": ["True", "False"],
             "answer": "False"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket sanningsvärde kommer uttrycket tolkas som?",
             "gist_id": "cf2e594c448bb14b117e",
             "alternatives": ["True", "False"],
             "answer": "True"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket sanningsvärde kommer uttrycket tolkas som?",
             "gist_id": "6a003c92909518665638",
             "alternatives": ["True", "False"],
             "answer": "False"

@@ -18,11 +18,11 @@ var data = {
             "alternatives": ["int", "float"],
             "answer": "float"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket abs(-17) == 17?",
+            "description": "Vilket värde har uttrycket abs(-17) == 17?",
             "alternatives": ["True", "False"],
             "answer": "True"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket not []?",
+            "description": "Vilket värde har uttrycket not []?",
             "alternatives": ["True", "False"],
             "answer": "True"
         }
