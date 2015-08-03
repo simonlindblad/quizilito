@@ -15,12 +15,12 @@ var data = {
             "answer": "Sant"
         }, {
             "description": "En variabel som lagrar en räknare ska skrivas med",
-            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS"],
-            "answer": "Falskt"
+            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LETTERS"],
+            "answer": "snake_case"
         }, {
             "description": "En variabel som lagrar antalet planeter i solsystemet ska skrivas med",
-            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS"],
-            "answer": "Falskt"
+            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LETTERS"],
+            "answer": "CAPITAL_LETTERS"
         }, {
             "description": "Alla kommentarer ska skrivas med fullständiga meningar",
             "alternatives": ["Sant", "Falskt"],
