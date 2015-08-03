@@ -3,7 +3,7 @@ var data = {
     "questions": [
         {
             "description": "Vilket sanningsvärde kommer uttrycket tolkas som?",
-            "gist_id": "01fd2317976ab701fb9b"
+            "gist_id": "01fd2317976ab701fb9b",
             "alternatives": ["True", "False"],
             "answer": "True"
         }, {
