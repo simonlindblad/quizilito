@@ -2,22 +2,22 @@ var data = {
     "title" : "Strängar",
     "questions": [
 		{
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket värde har uttrycket?",
 			"gist_id": "b464000ab6faccd0bfeb",
             "alternatives": ["True", "False"],
             "answer": "False"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket värde har uttrycket?",
 			"gist_id": "61b712eb0ad6bba6ce84",
             "alternatives": ["True", "False"],
             "answer": "False"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket värde har uttrycket?",
 			"gist_id": "2910a3df9d3ddc50a538",
             "alternatives": ["True", "False"],
             "answer": "False"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket värde har uttrycket?",
 			"gist_id": "862589f76ada3531b89d",
             "alternatives": ["True", "False"],
             "answer": "True"

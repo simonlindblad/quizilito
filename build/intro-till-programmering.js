@@ -25,10 +25,6 @@ var data = {
             "description": "Vilket sanningsvärde har uttrycket not []?",
             "alternatives": ["True", "False"],
             "answer": "True"
-        }, {
-            "description": "Vilket sanningsvärde har uttrycket 17?",
-            "alternatives": ["True", "False"],
-            "answer": "True"
         }
     ]
 }

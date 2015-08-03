@@ -2,7 +2,11 @@ var data = {
     "title": "Selektion",
     "questions": [
         {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket sanningsvärde har uttrycket 17?",
+            "alternatives": ["True", "False"],
+            "answer": "True"
+        }, {
+            "description": "Vilket värde har uttrycket?",
             "gist_id": "27e05f7545bde0120db1",
             "alternatives": ["True", "False"],
             "answer": "False"
