@@ -6,7 +6,7 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
-            "description": "Kommentarer används för att förklara syntaxen i sater",
+            "description": "Kommentarer används för att förklara syntaxen i koden",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
@@ -14,7 +14,7 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Sant"
         }, {
-            "description": "Samtliga kommentarer i en funktion utgör funktionens kontrakt",
+            "description": "Om en funktion ej uppfyller sitt kontrakt kommer funktionen ej köras",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
