@@ -19,7 +19,7 @@ var data = {
             "answer": "Falskt"
         }, {
             "description": "En variabel som lagrar antalet planeter i solsystemet ska skrivas med",
-            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS],
+            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS"],
             "answer": "Falskt"
         }, {
             "description": "Alla kommentarer ska skrivas med fullständiga meningar",
