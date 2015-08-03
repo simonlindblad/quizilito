@@ -251,6 +251,10 @@ Form
         border-color: $color-5 !important;
     }
 
+    input[type="radio"].error + label::after {
+        background: $color-5;
+    }
+
 	@include MQ(M) {
 		div {
 			/* form element wrapper */

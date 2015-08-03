@@ -228,6 +228,8 @@ Form
     background: url("../img/cd-required.svg") no-repeat top right; }
   .cd-form .error, .cd-answers-wrapper .cd-answers .error {
     border-color: #e94b35 !important; }
+  .cd-form input[type="radio"].error + label::after, .cd-answers-wrapper .cd-answers input[type="radio"].error + label::after {
+    background: #e94b35; }
   @media only screen and (min-width: 600px) {
     .cd-form div, .cd-answers-wrapper .cd-answers div {
       /* form element wrapper */
