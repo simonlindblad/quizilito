@@ -15,7 +15,7 @@ var data = {
             "answer": "Sant"
         }, {
             "description": "En variabel som lagrar en räknare ska skrivas med",
-            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS],
+            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS"],
             "answer": "Falskt"
         }, {
             "description": "En variabel som lagrar antalet planeter i solsystemet ska skrivas med",
