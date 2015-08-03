@@ -7,10 +7,10 @@ var data = {
             "alternatives": ["True", "False"],
             "answer": "False"
         }, {
-            "description": "Vilket värde har uttrycket?",
+            "description": "Vilket sanningsvärde har uttrycket?",
             "gist_id": "cf2e594c448bb14b117e",
-            "alternatives": ["True", "False", "None", "0"],
-            "answer": "None"
+            "alternatives": ["True", "False"],
+            "answer": "True"
         }, {
             "description": "Vilket sanningsvärde har uttrycket?",
             "gist_id": "6a003c92909518665638",
