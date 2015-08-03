@@ -17,11 +17,6 @@ var data = {
             "alternatives": ["True", "False"],
             "answer": "True"
         }, {
-            "description": "Vilket sanningsvärde kommer uttrycket tolkas som?",
-            "gist_id": "6a003c92909518665638",
-            "alternatives": ["True", "False"],
-            "answer": "False"
-        }, {
             "description": "Vad kommer uttrycket att printa?",
             "gist_id": "accdc2009d19de68d48b",
             "alternatives": ["Value is negative", "Value is negative Value is positive", "False"],
