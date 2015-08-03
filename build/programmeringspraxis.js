@@ -14,8 +14,12 @@ var data = {
             "alternatives": ["Sant", "Falskt"],
             "answer": "Sant"
         }, {
-            "description": "Om en funktion ej uppfyller sitt kontrakt kommer funktionen ej köras",
-            "alternatives": ["Sant", "Falskt"],
+            "description": "En variabel som lagrar en räknare ska skrivas med",
+            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS],
+            "answer": "Falskt"
+        }, {
+            "description": "En variabel som lagrar antalet planeter i solsystemet ska skrivas med",
+            "alternatives": ["CamelCase", "snake_case", "CAPITAL_LESSERS],
             "answer": "Falskt"
         }, {
             "description": "Alla kommentarer ska skrivas med fullständiga meningar",
