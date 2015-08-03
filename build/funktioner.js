@@ -13,10 +13,6 @@ var data = {
             "description": "Kan en funktion A komma åt en lokal variabel i en annan funktion B om en referens till variabeln ej skickats som parameter?",
             "alternatives": ["Ja", "Nej", "Endast om A är en inre funktion till B"],
             "answer": "Endast om A är en inre funktion till B"
-        }, {
-            "description": "Finns två variabler med olika namn men på olika nivåer kan du aldrig veta vilken som kommer användas",
-            "alternatives": ["Sant", "Falskt"],
-            "answer": "Falskt"
         }
     ]
 }
