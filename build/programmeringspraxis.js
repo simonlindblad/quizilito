@@ -2,7 +2,7 @@ var data = {
     "title": "Programmeringspraxis",
     "questions": [
         {
-            "description": "En funktion som har bieffekter kan ej anses vara korrekt",
+            "description": "En funktion som har sidoeffekter kan ej anses vara korrekt",
             "alternatives": ["Sant", "Falskt"],
             "answer": "Falskt"
         }, {
