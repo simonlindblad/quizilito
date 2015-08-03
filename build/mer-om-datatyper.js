@@ -32,7 +32,7 @@ var data = {
         }, {
             "description": "Ett element i en dictionary kan ha flera värden",
             "alternatives": ["Sant", "Falskt"],
-            "answer": "False"
+            "answer": "Falskt"
         }, {
             "description": "I ett binärt sökträd är noden med högst värde alltid ett löv.",
             "alternatives": ["Sant", "Falskt"],
