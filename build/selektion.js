@@ -23,13 +23,13 @@ var data = {
         }, {
             "description": "Vad kommer uttrycket att printa?",
             "gist_id": "accdc2009d19de68d48b",
-            "alternatives": ["hej", "hej då", "då"],
-            "answer": "hej"
+            "alternatives": ["Value is negative", "Value is negative Value is positive", "False"],
+            "answer": "Value is negative"
         }, {
-            "description": "Vilket sanningsvärde har uttrycket?",
+            "description": "Vilket värde får x då y har värdet 7?",
             "gist_id": "7c91f4e21d0bb8105bbf",
-            "alternatives": ["True", "False"],
-            "answer": "False"
+            "alternatives": ["7", "'odd'", "'even'"],
+            "answer": "'odd'"
         }
     ]
 }
