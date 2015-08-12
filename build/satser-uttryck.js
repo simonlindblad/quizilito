@@ -4,8 +4,8 @@ var data = {
 		{
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
 			"gist_id": "35d42dea60c355d56f4b",
-            "alternatives": ["n >= 0", "n > 2", "2 > n >= 0"],
-            "answer": "2 > n >= 0"
+            "alternatives": ["n >= 0", "n > 2", "2 >= n >= 0"],
+            "answer": "2 >= n >= 0"
         }, {
             "description": "Hur många satser har koden ovan?",
             "alternatives": ["3", "5", "6"],
@@ -17,7 +17,7 @@ var data = {
         }, {
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
 			"gist_id": "0e024d4d3cb2d1adbeec",
-            "alternatives": ["n > 2", "n >= 0", "2 > n >= 0"],
+            "alternatives": ["n > 2", "n >= 0", "2 >= n >= 0"],
             "answer": "n >= 0"
         }, {
             "description": "Hur många satser har koden ovan?",
@@ -30,12 +30,12 @@ var data = {
         }, {
             "description": "För vilka värden på n kommer 'Fall 2' skrivas ut?",
 			"gist_id": "fa97d0e48e2320a1154c",
-            "alternatives": ["n > 2", "2 > n >= 0", "n >= 0"],
+            "alternatives": ["n > 2", "2 >= n >= 0", "n >= 0"],
             "answer": "n > 2"
         }, {
         	"description": "För vilka värden på n kommer 'Fall 3' skrivas ut?",
-			"alternatives": ["n < 2", "n < 0", "n > 2"],
-			"answer": "n < 2"
+			"alternatives": ["n <= 2", "n < 0", "n > 2"],
+			"answer": "n <= 2"
         }, {
             "description": "Hur många satser har koden ovan?",
             "alternatives": ["6", "7", "8"],
