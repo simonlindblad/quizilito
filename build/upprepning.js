@@ -16,6 +16,11 @@ var data = {
             "answer": "[0]"
         }, {
             "description": "Vilket värde har uttrycket?",
+            "gist_id": "f295a35e0feb4e37e669",
+            "alternatives": ["[]", "[0]", "[0, 1]", "[1]"],
+            "answer": "[]"
+        }, {
+            "description": "Vilket värde har uttrycket?",
             "gist_id": "7ac04a2d7e9bc31ab598",
             "alternatives": ["[]", "[0, 2, 4]", "[0, 2, 4, 6]", "[1, 3, 5]"],
             "answer": "[0, 2, 4]"
